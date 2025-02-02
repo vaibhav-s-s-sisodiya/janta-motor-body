@@ -1,0 +1,40 @@
+div.section1 {
+  background-color: rgb(243, 244, 246);
+}
+h2 {
+  justify-self: center;
+  font-size: 2.25rem;
+  padding-top: 25px;
+}
+div.list1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.list1 > div {
+  width: 25%;
+  height: 35vh;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+  border-radius: 5%;
+  border-color: rgb(213, 210, 210) 2px solid;
+  box-shadow: 5px 5px 0px 5px rgba(230, 228, 228, 0.707);
+}
+div.list1 > div > div.image {
+  height: 70%;
+  border: 1px black;
+}
+div.list1 > div > h3 {
+  padding-left: 5%;
+}
+div.list1 > div > p {
+  padding-left: 5%;
+}
+div.list1 > div {
+  transition: transform 0.2s ease-in-out;
+}
+
+div.list1 > div:hover {
+  transform: scale(1.05);
+}

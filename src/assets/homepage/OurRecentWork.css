@@ -1,0 +1,41 @@
+div.section3 {
+  background-color: rgb(243, 244, 246);
+}
+div.list3 > div {
+  height: 35vh;
+  width: 20%;
+  margin: 2.5%;
+  border-radius: 5%;
+  background-color: white;
+}
+div.list3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+div.list3 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div.list3 > div > p:hover {
+  background-color: azure;
+  display: contents;
+}
+.list3 > div p {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    visibility 0s 0.3s;
+}
+.list3 > div:hover p {
+  visibility: visible;
+  background-color: lightgray;
+  opacity: 1;
+  transform: translateY(0);
+}
+.list3 > div:hover {
+  background-color: lightgray;
+}
